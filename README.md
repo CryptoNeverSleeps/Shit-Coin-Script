@@ -1,6 +1,6 @@
-![](https://cdn.discordapp.com/attachments/460803845614862337/462105794498789376/Nibex.png)
+![](https://media.discordapp.net/attachments/574289137792843776/574414997229404161/ShitCoin.png)
 
-# Nibex v2.3 Masternode Setup Guide [ Ubuntu 16.04 ]
+# Shit v1.0 Masternode Setup Guide [ Ubuntu 16.04 ]
 
 THIS GUIDE IS FOR ROOT USERS -
 
@@ -10,7 +10,7 @@ User=root
 Group=root
 ```
 
-Shell script to install a [Nibex Masternode](https://www.nibexcoin.com/) on a Linux server running Ubuntu 16.04. Use it on your own risk.
+Shell script to install a [Shit Masternode](https://www.shitcoin.com/) on a Linux server running Ubuntu 16.04. Use it on your own risk.
 ***
 
 ## Private Key
@@ -18,7 +18,7 @@ Shell script to install a [Nibex Masternode](https://www.nibexcoin.com/) on a Li
 **This script can generate a private key for you, or you can generate your own private key on the Desktop software.**
 
 Steps generate your own private key. 
-1.  Download and install Nibex v2.3 for Windows -   Download Link  - https://github.com/CryptoNeverSleeps/nibex/releases
+1.  Download and install Shit v1.0 for Windows -   Download Link  - https://github.com/CryptoNeverSleeps/shit/releases
 2.  Go to **Tools -> Click "Debug Console"** 
 3.  Type the following command: **masternode genkey**  
 4. You now have your generated **Private Key**  (MasternodePrivKey)
@@ -26,24 +26,24 @@ Steps generate your own private key.
 
 ## VPS installation
 ```
-wget -q https://github.com/CryptoNeverSleeps/Nibex-Script/raw/master/nibex-install.sh
-bash nibex-install.sh
+wget -q https://raw.githubusercontent.com/CryptoNeverSleeps/Shit-Coin-Script/master/shit-ipv4.sh
+bash shit-ipv4.sh
 ```
 Once the VPS installation is finished.
 
 Check the block height
 
-We want the blocks to match whats on the Nibex block explorer (http://explorer.nibexcoin.com/)
+We want the blocks to match whats on the Shit block explorer (http://explorer.shitcoin.com/)
 
 Once they match you can proceed with the rest of the guide.
 
 Check the block height with the following command
 ```
-watch nibex-cli getinfo
+watch shit-cli getinfo
 ```
 Make sure the version number matches.
 ```
-"version" : 2030000,     ------------------This is the latest version (Nibex v2.3)
+"version" : 1000000,     ------------------This is the latest version (Shit v1.0)
 ```
 
 Once the block height matches the block explorer issue the following command.
@@ -55,9 +55,9 @@ CTRL and C  at the same time  (CTRL KEY and C KEY)
 ## Desktop wallet setup  
 
 After the MN is up and running, you need to configure the desktop wallet accordingly. Here are the steps:  
-1. Open the Nibex Desktop Wallet.  
+1. Open the Shit Desktop Wallet.  
 2. Go to RECEIVE and create a New Address: **MN1**  
-3. Send **5000** Nibex to **MN1**. You need to send 5000 coins in one single transaction.
+3. Send **5000** Shit to **MN1**. You need to send 5000 coins in one single transaction.
 4. Wait for 15 confirmations.  
 5. Go to **Tools -> Click "Debug Console"** 
 6. Type the following command: **masternode outputs**  
@@ -92,7 +92,7 @@ startmasternode alias 0 MN1
 14. Login to your VPS and check your masternode status by running the following command:.
 
 ```
-nibex-cli masternode status
+shit-cli masternode status
 ```
 
 You want to see **"Masternode started successfully and Status 4"**
@@ -102,17 +102,17 @@ You want to see **"Masternode started successfully and Status 4"**
 ## Usage:
 
 ```
-nibex-cli masternode status  
-nibex-cli getinfo
+shit-cli masternode status  
+shit-cli getinfo
 ```
 
-Also, if you want to check/start/stop **Nibex**, run one of the following commands as **root**:
+Also, if you want to check/start/stop **Shit**, run one of the following commands as **root**:
 
 ```
-systemctl status Nibex.service          #To check if Nibex service is running  
-systemctl start Nibex.service           #To start Nibex service  
-systemctl stop Nibex.service           #To stop Nibex service  
-systemctl is-enabled Nibex.service      #To check if Nibex service is enabled on boot  
+systemctl status Shit.service          #To check if Shit service is running  
+systemctl start Shit.service           #To start Shit service  
+systemctl stop Shit.service           #To stop Shit service  
+systemctl is-enabled Shit.service      #To check if Shit service is enabled on boot  
 ```  
 
 ***
@@ -121,7 +121,7 @@ systemctl is-enabled Nibex.service      #To check if Nibex service is enabled on
 
 Any donation is highly appreciated
 
-**NBX**: EJ1gY9jmGbkP4res6Ep6JJX3J6BUGoJq4x  
-**BTC**: 32PN27dDZhUYAmyJTWuzDvNscbVpkL9855  
-**ETH**: 0x02680cdF57EEDC20C8A12036CA03e8D5F813b33b  
-**LTC**: MKYX9Pm58z6xSWT4Rc3CynjR58nj8hKo4F  
+**SHIT**: 
+**BTC**:  
+**ETH**:  
+**LTC**: 
