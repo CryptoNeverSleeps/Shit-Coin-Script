@@ -6,7 +6,7 @@ CONFIGFOLDER='/root/.shit'
 COIN_DAEMON='shitd'
 COIN_CLI='shit-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/CryptoNeverSleeps/shit/releases/download/v1.0.0.0/shit-linux-mn.tar.gz'
+COIN_TGZ='https://github.com/CryptoNeverSleeps/shit/releases/download/v1.0/shit-linux-mn.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Shit'
 COIN_PORT=7777
@@ -124,10 +124,6 @@ externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
 
 #Nodes
-addnode=155.138.211.131
-addnode=45.55.51.14
-addnode=134.209.42.21
-addnoe=134.209.46.145
 EOF
 }
 
