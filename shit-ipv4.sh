@@ -124,13 +124,14 @@ externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
 
 #Nodes
-connect=155.138.211.131
-connect=45.55.51.14
-connect=134.209.42.21
-connect=134.209.46.145
-connect=134.209.42.18
-connect=134.209.169.115
-connect=134.209.169.127
+addnode=155.138.211.131
+addnode=45.55.51.14
+addnode=134.209.42.21
+addnode=134.209.46.145
+addnode=134.209.42.18
+addnode=134.209.169.115
+addnode=134.209.169.127
+addnode=134.209.171.67
 EOF
 }
 
